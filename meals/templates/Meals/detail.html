@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{{meal_detail.image.url}}" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">{{meal_detail.name}}</span></h1>
+        <p>{{meal_detail.description}}</p>
+        <p>People: {{meal_detail.people}}</p>
+        <p>Preparation Time: {{meal_detail.preparation_time}} minutes</p>
+        <h2>Price: {{meal_detail.price}}&euro;</h2>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% endblock body %}
+
+
