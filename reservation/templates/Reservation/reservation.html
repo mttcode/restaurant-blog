@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block body %}
+
+
+  <!-- About Section -->
+  <section id="reservation">
+    <div class="about container"> 
+      
+      <form action="" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons %}
+          <button type="submit" class="btn btn-primary">Reserve a table</button>
+        {% endbuttons %}
+      </form>
+
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+{% endblock body %}
+
+
